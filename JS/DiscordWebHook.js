@@ -198,4 +198,9 @@ class WebhookUtil {
     }
 }
 
+
 export default WebhookUtil;
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = WebhookUtil;
+}
