@@ -178,6 +178,14 @@ class WebhookUtil {
     }
 
     /**
+     * @param {string} conx
+     * @returns {string|object|boolean|number|undefined|Array} 
+     */
+    get(conx){
+        return this.json_array[conx] ?? undefined;
+    }
+
+    /**
      * @param {string} url
      * @return {Promise<void>}
      *
@@ -198,9 +206,8 @@ class WebhookUtil {
     }
 }
 
-
 export default WebhookUtil;
 
-if (typeof module !== 'undefined' && module.exports) {
+if(typeof module !== 'undefined' && module.exports){
     module.exports = WebhookUtil;
 }

@@ -168,6 +168,14 @@ class WebHookUtil{
         $this->json_array["embeds"][] = $this->embed;
         $this->embed = [];
     }
+	
+	/**
+	* @param String $str
+	* @return mixed|null
+	*/
+	public function __get(string $str): mixed{
+		return $this->json_array[$str] ?? null;
+	}
 
     /**
      * @return void
