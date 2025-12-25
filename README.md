@@ -117,6 +117,10 @@ class ClassName{
 - `sendWebhook()` - Send the webhook message (PHP)
 - `sendWebhook(URL)` - Send the webhook message (NodeJS)
 
+### Get Data
+- `<WebhookUtil>.get("title")` - Get the webhook data (NodeJS)
+- `<Webhookutil>->title` - Get the webhook data (PHP)
+
 ---
 
 ## 🎯 Color Options
